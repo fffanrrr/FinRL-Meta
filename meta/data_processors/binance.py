@@ -39,7 +39,7 @@ class Binance(_Base):
             check_date(start_date)
             check_date(end_date)
         super().__init__(data_source, start_date, end_date, time_interval, **kwargs)
-        self.url = "https://api.binance.com/api/v3/klines"
+        self.url = "https://api.binance.us/api/v3/klines"
         self.time_diff = None
 
     # main functions
